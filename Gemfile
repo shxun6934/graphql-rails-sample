@@ -13,8 +13,11 @@ gem 'puma'
 gem 'redis-rails'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
+# Use ActiveModel has_secure_password
+gem 'bcrypt'
 
 gem 'graphql'
+gem 'graphql-batch'
 
 group :development, :test do
   # Reduces boot times through caching; required in config/boot.rb
@@ -32,7 +35,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  # ブラウザでGraphQLのクエリを実行できるGraphQLIDEを動かすためのgem
+  # ブラウザでGraphQLのクエリを実行できるGraphiQLを動かすためのgem
   gem 'graphiql-rails'
   gem 'sprockets', '~> 4.0'
 end
