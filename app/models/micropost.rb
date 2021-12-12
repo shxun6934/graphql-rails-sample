@@ -1,4 +1,4 @@
-class Micropost < ActiveRecord
+class Micropost < ApplicationRecord
   # Userモデルが親、Micropostモデルが子。
   belongs_to :user
 
